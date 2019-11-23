@@ -1,0 +1,60 @@
+@RequestMapping
+- 요청 URL을 어떤 메서드가 처리할 지 mapping 해주는 어노테이션
+- 컨트롤러나 컨트롤러의 메서드에 적용한다
+
+@GetMapping
+- @RequestMapping(Method=RequestMethod.GET)과 같다
+
+@RequestAttribute
+- Request에 설정되어 있는 속성 값을 가져올 수 있다
+
+@RequestParam
+- request의 parameter에서 가져옴. 메소드의 파라미터에 사용된다
+
+@Component
+- 스프링에게 해당 클래스를 Bean으로 등록하기 위한 어노테이션
+
+@Controller
+- 해당 클래스가 컨트롤러임을 스프링에게 알리는 어노테이션
+
+@Getter
+- 해당 객체의 getter를 사용할 수 있게 해주는 어노테이션
+
+@Setter
+- 해당 객체의 setter를 사용할 수 있게 해주는 어노테이션
+
+@ToString
+- 해당 객체의 toString 메서드를 사용할 수 있게 해주는 어노테이션
+
+@Data
+- 해당 클래스의 getter, setter, toString, 생성자등을 만들어주는 어노테이션
+
+@AllArgsConstructor
+- 인스턴스 변수로 선언된 모든 변수들을 파라미터로 받는 생성자를 만들어줌
+
+@RequiredArgsConstructor
+- @NonNull, final이 붙은 인스턴스 변수에 대한 생성자 작성해줌
+
+@NonNull
+- 널이 허용되지 않는 곳에 사용
+
+@DateTimeFormat
+- 스트링 타입으로 들어온 날짜 파라미터 값에 대해 Date 타입으로 변환해주는 어노테이션
+
+@InitBinder
+- @InitBinder 어노테이션이 적용된 메서드를 이용해서 자동 형변환 안되는 파라미터 값들을 변환해줌
+
+@Log4j
+- 로그를 기록할 수 있게 해주는 어노테이션
+
+@Test
+- 테스트를 수행하는 메서드를 나타냄.
+
+@RunWith
+-  jUnit 프레임워크의 테스트 실행방법을 알려줄 때 사용하는 어노테이션
+
+@ContextConfiguration
+- 스프링의 빈 설정 파일의 위치를 지정할 때 사용되는 어노테이션
+
+@Autowired
+- @Component를 사용한 Bean의 의존성 주입을 자동으로 하게 해줌
